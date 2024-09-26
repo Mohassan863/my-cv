@@ -1,0 +1,152 @@
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.home {
+  margin: 0%;
+  padding: 0%;
+  height: 100vh; /* لجعل الصفحة تأخذ ارتفاع الشاشة بالكامل */
+  width: 100vw;
+  /* لجعل الصفحة تأخذ ارتفاع الشاشة بالكامل */
+ background: linear-gradient(100deg,#D7D7D7 50%, rgb(0, 0, 0) 50%);
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* إضافة ظل خفيف أسفل الصورة */
+
+}
+
+.image {
+  grid-area: 1 / 2 / 2 / 3;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  display: grid;
+  grid-template-rows: 10% 90%;
+  grid-template-areas: "div2 "
+                      "my-image";
+}
+.text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+text-align: center;
+color: rgb(0, 0, 0);
+grid-area: 1 / 1 / 2 / 2;
+font-size: 20px;
+}
+
+h1 {
+  font-size:  70px;
+  color:  #000000;
+}
+p {
+  font-size:  20px;
+  color:  #909090;
+}
+
+
+
+.my-image {
+width: 400px;
+height: 100%;
+ /* عرض الصورة */
+ padding-right: 10px; /* لضبط المسافة من اليسار */
+ display: flex;
+ align-items: center;
+ justify-content: center;
+    border-radius: 10px; /* حواف الصورة مستديرة */
+    background-color: black;
+    border: 5px solid blac; /* إضافة إطار أبيض حول الصورة */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* إضافة ظل خفيف أسفل الصورة */
+
+
+}
+
+
+
+
+.dev2 {
+    
+    top: 0;
+    right: 0;
+    padding: 10px;
+    background-color: #000000;
+
+  }
+  ul {
+    list-style-type: none;
+    
+    margin: 0;
+    padding: 0;
+  }
+  
+ li {
+  display: inline-block; /* يمكن أيضًا استخدام inline */
+
+  
+
+}
+
+.edu {
+  font-size: 10px;
+  background-color:rgb(255, 255, 255);
+  border-radius: 10px;
+  padding: 5px;
+  margin: auto;
+}
+.edu a {
+  color: #000000;
+}
+
+a {
+  color: #fdfdfd;
+  margin: 20px;
+  padding: 5px 10px 5px 10px;
+  text-decoration: none;
+}
+
+a:hover {
+  background-color:rgb(255, 255, 255);
+  color: #000000;
+
+  margin: 20px;
+  padding: 5px 10px 5px 10px;
+  font-size: 15px;
+  border-radius: 5px;
+
+}
+.download-button {
+  background-color: #333;
+  color: #fff;
+  border:rgb(9, 123, 211) 2px solid;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration:none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: -20px;
+  margin-left: 500px;
+}
+
+.social-icons a {
+  background-color: #C4C4C4;
+  border-radius: 5px;
+  color: rgb(0, 0, 0);
+  font-size: 24px;
+  margin-right: 15px;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #ff9800; /* اللون عند التحويم فوق الأيقونات */
+}
